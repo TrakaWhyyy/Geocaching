@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel ="icon" href ="Images/Icon.svg.png" type ="image/x-icon">
+    <link rel="stylesheet" href="isolated2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/759573e11a5e10f3e75b30c7a37d02a3?family=Old+London">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20436d9b7a.js" ></script>
+   
+       <style>
+     
+      .header_2 {
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-weight: bold;
+      }
+      *{margin: 0%;padding: 0%;font-family: 'Poppins', sans-serif;}
+html {scroll-behavior: smooth;
+}
+.hero {min-height: 100vh;
+max-width: 100%;
+background-image: linear-gradient(rgba(39, 5, 63, 0.007),rgb(15, 1, 24)) ,url(Image_folder/pexels-nataliya-vaitkevich-7235804.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 90px;
+}
+nav img {
+    width: 100%;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li
+{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+.navlinks ul li a 
+{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 13px;
+}
+.navlinks ul li::after
+{
+content: '';
+width: 0%;
+height: 2px;
+background: rgb(99, 28, 156);
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.navlinks ul li:hover::after{width: 100%;}
+.herot {
+    width: 90%;
+    color: rgb(250, 249, 249);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.herot h1 {font-size: 62px;}
+.herot p{margin: 10px 0 40px;
+font-size: 14px;
+color: #fff;}
+.herobtn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid rgb(252, 251, 253);
+   padding: 12px 34px;
+   font-size: 13px;
+   background: transparent;
+   position: relative;
+   cursor: pointer; 
+   transition: 0.5s;
+}
+
+.herobtn:hover{border:1px solid rgb(217, 159, 235); background:rgb(217, 159, 235);}
+
+nav .fa {display: none;}
+
+@media(max-width:700px)
+
+{
+
+    .herot h1 {font-size: 20px;}
+
+
+    .navlinks ul li {display: block;}
+
+    .navlinks{position: absolute;
+background: rgb(152, 137, 165);
+height: 100vh;
+width: 200px;
+top: 0;
+right: -200px;
+text-align: left;
+z-index: 2;
+transition: 1s;}
+
+nav .fa{
+    display: block;
+    color: rgb(7, 7, 7);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;}
+
+.navlinks ul {
+    padding: 30px
+}
+}
+      
+      
+      #footer{
+    
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    }
+    .footrow {
+        width: 85%;
+        margin: auto;
+       color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footcol{
+        flex-basis: 25%;
+        padding: 10px;
+        color:#fff ;
+    }
+    
+    .footcol:nth-child(2), .footcol:nth-child(3){
+        flex-basis: 15%;
+    }
+    .footlogo{width: 80px;
+        margin-bottom: 30px;
+    margin-top: 30px;
+    }
+    
+        .footp {
+            color: #fff;
+        }
+        .footemail { color: #fff;}
+    
+        .footcol h3{
+            width: fit-content;
+            border-bottom: 1px solid rgb(248, 245, 245);
+            margin: 20px 0;
+        }
+        .footcol h4{
+            width: fit-content;
+            border-bottom: 1px solid #ccc;
+            margin: 20px 0;
+        }
+         .footemail {width: fit-content;
+        border-bottom: 1px solid #eef8ff;
+        margin: 20px 0;
+        }
+        ul li {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #eef8ff;
+        }
+        form{
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #eef8ff;
+            margin-bottom: 50px;
+        }
+        form .far{
+    
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        form input
+        {
+            width: 100%;
+            background: transparent;
+            color: #eef8ff;
+            border: 0;
+            outline: none;
+        }
+        form button {background: transparent;
+        border: 0;
+    outline: none;
+    cursor: pointer;
+    }
+    form button .fas {
+        font-size: 16px;
+        color: #eef8ff;
+    }
+    .footsocialicons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #eef8ff;
+    background: #eef8ff00;
+    margin-right: 15px;
+    cursor: pointer;
+    }
+    .footcopyright {
+        text-align: center;
+    }
+    .herot {
+      text-align: center;
+      color:white;
+    }
+    .game{
+      text-align:center;
+      color:white;
+      background-color: #020202;
+    }
+    .p1{
+        text-align: center;
+        color: #020202;
+    }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <nav>
+          <a href="Task.html"><img src="image_folder/Geocaching.svg_.png" alt="Task" height="100px"></a>
+          <div class="navlinks" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html" alt="Home">HOME</a></li>
+                  <li><a href="About_us.html" alt="About">ABOUT US</a></li>
+                  <li><a href="Product.html" alt="Product">PRODUCT</a></li>
+                  <li><a href="Task.html" alt="Task">TASK</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+<div class="herot">
+  <h1>TASK</h1>
+  <p>Lets find clue and win the game. <br>Pleasently.....</br></p>
+  <a href="index.html" class="herobtn"><b>Take a look!</b></a>
+</div>
+  </section>
+  <section>
+    
+    <div class="game">
+    <p>You can find the riddle and win this game</p>
+    <p>First riddle is "Water will show you the way"</p>
+    <input type="button" onclick="myFunction()" value="Password" />
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let text;
+        let password = prompt("What is the password");
+        switch (password) {
+          case "DOU/116":
+            text = "The mirror that goes up will show the way";
+            break;
+
+          case "Uv-4085":
+            text = "Golden statue will show you the way";
+            break;
+
+          case "2F-123":
+            text = "you win the game";
+            break;
+
+          default:
+            text = "Try again";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+    
+    </div>
+  </section>
+  <p class="p1">Task location.</p>
+  <div class="col-md-12">
+    <div id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8679502037808!2d79.868427314601!3d6.906389795009704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259790bddd389%3A0x18b651ed7fc62f32!2sNIBM%20Colombo!5e0!3m2!1sen!2slk!4v1675917237072!5m2!1sen!2slk" width="100%" height="450px" style="border:0;" allowfullscreen ></iframe>
+    </div>
+  </div>
+    <footer style="background: linear-gradient(to right, #020202, rgb(31, 2, 48));">
+    <div class="footrow">
+        <div class="footcol">
+            <img src="Image_folder/R.jpg" 
+            alt="LogoPC" class="footlogo">
+            <p class="footp">RED project is a company made for online business. We located in sri lanka. Red project started on 2021 december 12 by a undergraduat sofftware engineer student in NIBM.
+            </p>
+        </div>
+        <div class="footcol">
+            <h3>Office <div class="footunderline"><span></span></div></h3>
+            <p class="footp">No-64/4</p>
+            <p class="footp">DIBBADA ROAD</p>
+            <p class="footp">SOUTH THALPITIYA</p>
+            <p class="footp">WADDUWA</P>
+            <p class="footemail">chamikagihanedirisuriya@gmail.com</p>
+            <h3>077-1425643</h3>
+        </div>
+        <div class="footcol">
+            <h3>Links<div class="footunderline"><span></span></h3>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About_us.html">ABOUT US</a></li>
+                <LI><a href="Product.html">PRODUCT</a></LI>
+                <li><a href="Task.html">TASK</a></li>
+            </ul>
+        </div>
+        <div class="footcol">
+            <h3>Newsletter<div class="footunderline"><span></span></h3>
+        <form>
+            <i class="fa-solid fa-envelope"></i>
+            <input style="color: #fff;" type="email" placeholder="Enter your email -Ex@mail.com" required>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="footsocialicons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        </div>
+            </div>
+        <hr>
+        <p style="color: #fff" class="footcopyright">All Rights Reserved -RedProject.Pvt.Ltd</p>
+    
+    </footer>
+  </body>
+  
+</html>
